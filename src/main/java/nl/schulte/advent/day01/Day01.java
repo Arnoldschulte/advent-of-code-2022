@@ -3,14 +3,13 @@ package nl.schulte.advent.day01;
 import nl.schulte.advent.util.TextParser;
 
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
 public class Day01 {
 
-    public static void main(String[] args) throws IOException, URISyntaxException {
+    public static void main(String[] args) throws IOException {
         final List<String> textLines = TextParser.getTextLines("input/day01.txt");
 
         final List<Integer> sortedElvesTotalCalories = getElvesWithFood(textLines).stream()
