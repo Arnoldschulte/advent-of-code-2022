@@ -4,12 +4,13 @@ import nl.schulte.advent.util.TextParser;
 import org.apache.commons.collections4.ListUtils;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Objects;
 
 public class Day03 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, URISyntaxException {
         final List<String> textLines = TextParser.getTextLines("input/day03.txt");
 
         final List<Rucksack> rucksacks = textLines.stream()

@@ -3,11 +3,12 @@ package nl.schulte.advent.day04;
 import nl.schulte.advent.util.TextParser;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.List;
 
 public class Day04 {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, URISyntaxException {
         final List<String> textLines = TextParser.getTextLines("input/day04.txt");
 
         final List<ElvePair> elvePairs = textLines.stream()
